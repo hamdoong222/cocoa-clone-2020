@@ -31,9 +31,11 @@
             If you have a Kokoa Account, log in with your email or phone number.
         </p>
     </header>
-    <form id="login-form">
-        <input type="text" placeholder="Email or phone number"/>
-        <input type="password" placeholder="password"/>
+    <form action="friends.html" method="get" id="login-form">
+        <!--action이 submit을 클릭하면 해당 url(반드시존재해야함)으로 이동할수 있게 도와줌.-->
+        <!--method="POST"는 데이터베이스에 연결하는것, get은 url-->
+        <input name="username" type="text" placeholder="Email or phone number"/>
+        <input name="password" type="password" placeholder="password"/>
         <input type="submit" value="Log In" />
         <a href="#">Find Kokoa Account or Password</a>
     </form>
